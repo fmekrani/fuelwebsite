@@ -1,25 +1,6 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "server/index.ts",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "server/index.ts"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "public/$1"
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/waitlist",
-      "destination": "/api/waitlist"
-    }
-  ]
+  "buildCommand": "npm run build",
+  "outputDirectory": "public",
+  "framework": "express"
 }
