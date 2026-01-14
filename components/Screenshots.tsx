@@ -53,6 +53,10 @@ export default function Screenshots() {
           ))}
         </div>
       </div>
+
+      {/* Lightbox */}
+      {lightbox && (
+        <div 
           className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-4"
           onClick={() => setLightbox(null)}
         >
@@ -71,11 +75,7 @@ export default function Screenshots() {
               alt="Screenshot preview" 
               className="w-full h-full object-contain rounded-lg"
               onClick={(e) => e.stopPropagation()}
-            /trokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-          <div className="bg-gray-400 p-4 rounded-lg max-w-2xl w-full aspect-square flex items-center justify-center">
-            <p className="text-gray-600">Screenshot placeholder</p>
+            />
           </div>
         </div>
       )}
