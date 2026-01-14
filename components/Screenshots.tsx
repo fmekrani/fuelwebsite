@@ -6,13 +6,15 @@ export default function Screenshots() {
   const [lightbox, setLightbox] = useState<string | null>(null);
 
   const screenshots = [
-    { id: 1, title: "Daily Summary", alt: "Home screen" },
-    { id: 2, title: "Friends Feed", alt: "Social feed" },
-    { id: 3, title: "Leaderboards", alt: "Leaderboards" },
-    { id: 4, title: "Calories & Macros", alt: "Nutrition" },
-    { id: 5, title: "Analytics Dashboard", alt: "Analytics" },
-    { id: 6, title: "Run Tracking", alt: "GPS tracking" },
-    { id: 7, title: "Workout Plans", alt: "Workout plans" },
+    { id: 1, title: "Daily Summary", alt: "Home screen with daily stats" },
+    { id: 2, title: "Workout Streaks", alt: "Streak tracking" },
+    { id: 3, title: "Friends Feed", alt: "Social workout feed" },
+    { id: 4, title: "Leaderboards", alt: "Workout streak leaderboards" },
+    { id: 5, title: "Count Calories", alt: "Food logging and calorie tracking" },
+    { id: 6, title: "Overall Stats", alt: "Nutrition analytics dashboard" },
+    { id: 7, title: "Analytics Dashboard", alt: "Workout and run charts" },
+    { id: 8, title: "AI Coach", alt: "Personal fitness coach" },
+    { id: 9, title: "Workout Plans", alt: "Preset and custom workout plans" },
   ];
 
   return (
